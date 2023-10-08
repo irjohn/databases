@@ -1,0 +1,8 @@
+__pycache__/
+test*
+unittests.py
+install.txt
+build/
+dist/
+databases.egg-info/
+unittests.py
