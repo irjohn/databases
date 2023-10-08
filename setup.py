@@ -5,8 +5,12 @@ setup(
 	version="0.1.0",
 	packages=find_packages(),
     install_requires=[
-        "redis[hiredis]",
-        "pymysql",
-        "aiomysql"
-	],
+
+    ],
+    extras_require={
+        "all": ["redis[hiredis]", "pymysql", "aiomysql"],
+        "redis": ["redis[hiredis]"],
+        "pymysql": ["pymysql"],
+        "aiomysql": ["aiomysql"],
+    }
 )
